@@ -21,16 +21,22 @@
     
     
     //Uchenik
-    for (NSInteger i=0; i<15; i++) {
+    for (NSInteger i=0; i<100; i++) {
         Student *student=[[Student alloc] initWithProperties];
         NSString* key=[NSString stringWithFormat:@"%@ %@",student.lastname,student.firstname];
         [ClassMagazine setObject:student forKey:key];
+       
     }
     NSLog(@"%@",ClassMagazine);
     
     //----------
     //end of Uchenik
     
+    //Student
+    for (NSString* obj in [ClassMagazine allKeys]) {
+        Student *studentObj= [ClassMagazine objectForKey:obj];
+        NSLog(@"%@ say:%@",obj,studentObj.helloPhrase);
+    }
     return YES;
 }
 
