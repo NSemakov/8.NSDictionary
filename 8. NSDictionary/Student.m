@@ -16,6 +16,7 @@
     if (self) {
         self.firstname=[self chooseFirstname];
         self.lastname=[self chooseLastname];
+        self.helloPhrase=[self helloPhrase];
     }
     return self;
 }
@@ -61,5 +62,12 @@
                         @"Poirier", nil];
 
     return [lastnames objectAtIndex:arc4random_uniform((int)[lastnames count]-1)];
+}
+-(NSString*) chooseHelloPhrase {
+    
+    NSArray *HelloPhrases=[NSArray arrayWithObjects: @"Hello",
+                        @"How are you?", @"Hola",@"Hi", nil];
+    
+    return [HelloPhrases objectAtIndex:arc4random_uniform((int)[HelloPhrases count]-1)];
 }
 @end

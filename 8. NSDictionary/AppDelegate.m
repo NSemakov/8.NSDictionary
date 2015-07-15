@@ -17,9 +17,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSMutableDictionary* ClassMagazine=[NSMutableDictionary new];
     
-    Student *student=[Student new];
     
+    //Uchenik
+    for (NSInteger i=0; i<15; i++) {
+        Student *student=[[Student alloc] initWithProperties];
+        NSString* key=[NSString stringWithFormat:@"%@ %@",student.lastname,student.firstname];
+        [ClassMagazine setObject:student forKey:key];
+    }
+    NSLog(@"%@",ClassMagazine);
+    
+    //----------
+    //end of Uchenik
     
     return YES;
 }

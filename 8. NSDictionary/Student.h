@@ -12,5 +12,5 @@
 @property (strong,nonatomic) NSString* firstname;
 @property (strong,nonatomic) NSString* lastname;
 @property (strong,nonatomic) NSString *helloPhrase;
-
+- (instancetype)initWithProperties;
 @end
