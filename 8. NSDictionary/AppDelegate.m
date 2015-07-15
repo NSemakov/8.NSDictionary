@@ -37,6 +37,23 @@
         Student *studentObj= [ClassMagazine objectForKey:obj];
         NSLog(@"%@ say:%@",obj,studentObj.helloPhrase);
     }
+    //----------
+    //end of Student
+    
+    //Master
+    NSArray* keysArray=[ClassMagazine allKeys];
+    NSArray* sortedKeysArray=[keysArray sortedArrayUsingComparator:
+                              ^NSComparisonResult(NSString* obj1, NSString* obj2) {
+        return [obj1 compare:obj2];
+    }];
+    for (NSString* obj in sortedKeysArray) {
+         Student *studentObj= [ClassMagazine objectForKey:obj];
+         NSLog(@"%@ say:%@",obj,studentObj.helloPhrase);
+
+    }
+    
+    //---------
+    //end of Master
     return YES;
 }
 
