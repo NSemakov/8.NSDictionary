@@ -14,6 +14,7 @@
 		84A147E81B569CF500606DBD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A147E71B569CF500606DBD /* Images.xcassets */; };
 		84A147EB1B569CF500606DBD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A147E91B569CF500606DBD /* LaunchScreen.xib */; };
 		84A147F71B569CF600606DBD /* ___NSDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A147F61B569CF600606DBD /* ___NSDictionaryTests.m */; };
+		84A148021B569D2A00606DBD /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A148011B569D2A00606DBD /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		84A147F01B569CF600606DBD /* 8. NSDictionaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "8. NSDictionaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A147F51B569CF600606DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A147F61B569CF600606DBD /* ___NSDictionaryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "___NSDictionaryTests.m"; sourceTree = "<group>"; };
+		84A148001B569D2A00606DBD /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		84A148011B569D2A00606DBD /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				84A147DE1B569CF500606DBD /* AppDelegate.h */,
 				84A147DF1B569CF500606DBD /* AppDelegate.m */,
+				84A148001B569D2A00606DBD /* Student.h */,
+				84A148011B569D2A00606DBD /* Student.m */,
 				84A147E11B569CF500606DBD /* ViewController.h */,
 				84A147E21B569CF500606DBD /* ViewController.m */,
 				84A147E41B569CF500606DBD /* Main.storyboard */,
@@ -222,6 +227,7 @@
 				84A147E31B569CF500606DBD /* ViewController.m in Sources */,
 				84A147E01B569CF500606DBD /* AppDelegate.m in Sources */,
 				84A147DD1B569CF500606DBD /* main.m in Sources */,
+				84A148021B569D2A00606DBD /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
